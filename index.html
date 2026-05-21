@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mux Tech - Best Car Tracker Company in Pakistan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #07111f;
+      color: #ffffff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(4,14,28,0.95), rgba(0,109,119,0.9)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #d9f3f4;
+      margin-bottom: 35px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .primary-btn {
+      background: #00d4ff;
+      color: #07111f;
+      box-shadow: 0 10px 30px rgba(0,212,255,0.4);
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-4px);
+      background: #ffffff;
+    }
+
+    .secondary-btn {
+      border: 2px solid #00d4ff;
+      color: #ffffff;
+      background: transparent;
+    }
+
+    .secondary-btn:hover {
+      background: #00d4ff;
+      color: #07111f;
+      transform: translateY(-4px);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.7rem;
+      margin-bottom: 15px;
+      color: #00d4ff;
+    }
+
+    .section-title p {
+      color: #c4d5df;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #0e1c2f;
+      border-radius: 20px;
+      padding: 35px;
+      transition: 0.4s ease;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #00d4ff;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #00d4ff;
+    }
+
+    .card p {
+      color: #d4dce2;
+      font-size: 0.98rem;
+    }
+
+    .article {
+      background: #0b1727;
+      border-radius: 25px;
+      padding: 50px;
+      margin-top: 60px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    .article h2 {
+      color: #00d4ff;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .article h3 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .article p, .article li {
+      color: #d9e4ea;
+      margin-bottom: 15px;
+    }
+
+    .article ul {
+      padding-left: 20px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #00d4ff, #006d77);
+      padding: 70px 20px;
+      text-align: center;
+      border-radius: 25px;
+      margin-top: 80px;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #050b14;
+      color: #8ea5b5;
+      margin-top: 80px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.7rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .article {
+        padding: 30px;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Pakistan’s Trusted Car Tracker Company</h1>
+      <p>
+        Protect your vehicle with advanced GPS tracking, fast recovery support,
+        and 24/7 monitoring services trusted by car owners across Pakistan.
+      </p>
+
+      <div class="btn-group">
+        <a href="https://muxtech.com.pk" target="_blank" class="btn primary-btn">Visit Website</a>
+        <a href="https://wa.me/923219171616" target="_blank" class="btn secondary-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="section-title">
+      <h2>Why People Choose Professional Tracking Services</h2>
+      <p>
+        Vehicle safety is becoming more important in Pakistan. Car owners now prefer smart GPS tracking systems for better protection and peace of mind.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Live GPS Tracking</h3>
+        <p>Track your vehicle location in real-time using advanced GPS technology and mobile monitoring systems.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fast Vehicle Recovery</h3>
+        <p>Quick response and recovery support help improve the chances of recovering stolen vehicles faster.</p>
+      </div>
+
+      <div class="card">
+        <h3>24/7 Monitoring</h3>
+        <p>Professional support teams monitor your vehicle around the clock for better safety and emergency response.</p>
+      </div>
+    </div>
+
+    <div class="article">
+      <h2>Best Car Tracker Company in Pakistan</h2>
+
+      <p>
+        Car theft is becoming a serious issue in Pakistan. Many people search online for trusted tracking companies that can help protect their vehicles and recover stolen cars quickly.
+      </p>
+
+      <p>
+        Vehicle owners want security, fast recovery services, and reliable customer support. This is why modern GPS tracking systems are becoming more popular across the country.
+      </p>
+
+      <h2>Problem: Vehicle Theft in Pakistan</h2>
+
+      <p>
+        Car theft cases create stress for families and business owners. Expensive vehicles are often targeted in busy cities and public parking areas.
+      </p>
+
+      <h3>Solution</h3>
+
+      <p>
+        Installing a professional GPS tracking system helps monitor vehicles in real-time. Owners can receive alerts and track vehicle movement instantly.
+      </p>
+
+      <h2>Problem: Fear of Losing an Expensive Car</h2>
+
+      <p>
+        People spend years saving money to buy a car. Losing it can cause financial problems and emotional stress.
+      </p>
+
+      <h3>Solution</h3>
+
+      <p>
+        A reliable tracking company provides peace of mind by allowing owners to monitor their vehicle location anytime through mobile apps.
+      </p>
+
+      <h2>Why Customers Trust Mux Tech</h2>
+
+      <p>
+        Mux Tech is gaining customer trust because of its modern tracking technology, professional support, and positive customer experience.
+      </p>
+
+      <ul>
+        <li>Advanced GPS tracking systems</li>
+        <li>Fast recovery support</li>
+        <li>24/7 monitoring services</li>
+        <li>Positive customer reviews</li>
+        <li>Easy-to-use mobile tracking</li>
+      </ul>
+
+      <div class="cta" style="margin-top:60px; margin-bottom:60px;">
+      <h2>Need Professional Vehicle Security?</h2>
+      <p>
+        Protect your car with modern GPS tracking, live monitoring, and fast recovery support trusted by vehicle owners across Pakistan.
+      </p>
+
+      <div class="btn-group">
+        <a href="https://muxtech.com.pk" target="_blank" class="btn primary-btn">Visit Website</a>
+        <a href="https://wa.me/923219171616" target="_blank" class="btn secondary-btn">WhatsApp Support</a>
+      </div>
+    </div>
+
+      <h2>Features People Search on Google</h2>
+
+      <h3>Real-Time Tracking</h3>
+      <p>See the exact location of your vehicle instantly through live GPS monitoring.</p>
+
+      <h3>Theft Alerts</h3>
+      <p>Receive alerts when unusual vehicle movement is detected.</p>
+
+      <h3>Mobile App Access</h3>
+      <p>Monitor your car from your smartphone anytime and anywhere.</p>
+
+      <h3>24/7 Customer Support</h3>
+      <p>Emergency support teams remain available day and night for customer safety.</p>
+
+      <h2>Why Recovery Rate Matters</h2>
+
+      <p>
+        Many customers choose tracking companies with strong vehicle recovery performance. Fast recovery improves customer trust and helps protect expensive vehicles.
+      </p>
+
+      <h2>Conclusion</h2>
+
+      <p>
+        Vehicle security is now very important in Pakistan. Modern tracking systems help reduce theft risks, improve safety, and provide peace of mind.
+      </p>
+
+      <p>
+        Mux Tech continues building trust through advanced tracking solutions, customer support, and professional monitoring services for vehicle owners across Pakistan.
+      </p>
+    </div>
+
+    <div class="cta">
+      <h2>Protect Your Vehicle Today</h2>
+      <p>
+        Get modern GPS tracking solutions with smart monitoring and professional recovery support for complete peace of mind.
+      </p>
+
+      <div class="btn-group">
+        <a href="https://muxtech.com.pk" target="_blank" class="btn primary-btn">Visit Website</a>
+        <a href="https://wa.me/923219171616" target="_blank" class="btn secondary-btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Mux Tech — Modern Vehicle Tracking & Security Solutions in Pakistan</p>
+  </footer>
+
+<a href="https://wa.me/923219171616" target="_blank" class="floating-whatsapp">
+    💬
+  </a>
+
+  <style>
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 65px;
+      height: 65px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(37,211,102,0.5);
+      z-index: 999;
+      transition: 0.3s ease;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+  </style>
+
+</body>
+</html>
